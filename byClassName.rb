@@ -9,8 +9,8 @@ driver.navigate.to "https://housing.com/in/buy/mumbai/mumbai"
 
 driver.get "https://housing.com/in/buy/mumbai/andheri_east"
 
-#element = driver.find_element(:class_name,"buy-service")
-element = driver.find_element(:class,"buy-service")
+element = driver.find_element(:class_name,"buy-service")
+#element = driver.find_element(:class,"buy-service")
 
 puts "Test passed for Class Name Locator of #{driver.title}"
 driver.quit
