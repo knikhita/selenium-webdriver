@@ -13,3 +13,4 @@ link.click
 
 browser.title
 browser.find_element(:xpath,'\header\hgroup\h1').text
+browser.quit()
