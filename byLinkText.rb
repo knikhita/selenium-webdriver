@@ -1,13 +1,14 @@
 require 'rubygems'
 require 'selenium-webdriver'
 
-driver = Sekenium::WebDriver.for :ie
+driver = Selenium::WebDriver.for :ff
 
 #wait for 10 sec
 
-wait = Selenium::WebDriver::Wait.new(:timeout,'10')
+driver.manage.timeouts.implicit_wait = 10 
 
 driver.navigate.to "https://housing.com/in/buy/mumbai/mumbai"
-element = driver.find_element(:link_text,'properties_in_mumbai')
+
+element = driver.find_element(:link_text,'Avant Heritage')
 puts "Test Case passed for #{driver.title}"
 driver.quit
