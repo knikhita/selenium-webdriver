@@ -1,6 +1,6 @@
 require 'selenium-webdriver'
 
-describe "Selenium Recipes - Start different browsers" do
+define "Selenium Recipes - Start different browsers" do
 it "Start Chrome" do
 driver = Selenium::WebDriver.for(:chrome)
 driver.navigate.to("http://travel.agileway.net")
