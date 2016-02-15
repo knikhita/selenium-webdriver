@@ -22,6 +22,8 @@ describe Order do
 
 		before do
 
+	def test_making_order
+
 			@book = Book.new(:title => "RSpect Intro", :price: =>20)
 			@customer = Customer.new
 			@order = Order.new(@customer,@book)
