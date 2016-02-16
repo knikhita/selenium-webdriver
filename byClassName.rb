@@ -9,10 +9,11 @@ driver.navigate.to "https://housing.com/in/buy/mumbai/mumbai"
 
 driver.get "https://housing.com/in/buy/mumbai/andheri_east"
 
-driver.navigate.to.back()
+driver.navigate().back()
 
-driver.manage.timeouts.implicit_wait = 10
-driver.navigate.to.forward()
+#driver.manage.timeouts.implicit_wait = 50
+wait = Selenium::WebDriver::Wait.new(:timeout => 50) #explicit wait
+driver.navigate().forward()
 
 
 element = driver.find_element(:class_name,"buy-service")
