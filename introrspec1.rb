@@ -19,10 +19,11 @@ require 'selenium-webdriver'
 describe Order do 
 
 	describe "#submit" do
+		def test_making_order
 
 		before do
 
-	def test_making_order
+	#def test_making_order
 
 			@book = Book.new(:title => "RSpect Intro", :price: =>20)
 			@customer = Customer.new
